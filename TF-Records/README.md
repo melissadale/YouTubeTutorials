@@ -21,4 +21,4 @@ Make the alterations described below.
     * Line 80 to: `tf.app.flags.DEFINE_string('validation_directory', 'DATA/validate/', ...`
     * Line 88 to: `tf.app.flags.DEFINE_string('output_directory', 'C:\\Users\\melissa\\Desktop\\youtubetutorials\\TensorflowRecords\\tmp\\',` ... **NOTE**: the output file needs an absolute path, please update to point to your TensorflowRecords directory
     * Line 106: `tf.app.flags.DEFINE_string('labels_file', 'DATA/labels.txt', 'Labels file')`
-    * Line 258: `output_filename = '%s-%.5d-of-%.5d.tfrecords' % (name, shard, num_shards)
+    * Line 258: `output_filename = '%s-%.5d-of-%.5d.tfrecords' % (name, shard, num_shards)`
