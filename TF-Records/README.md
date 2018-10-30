@@ -9,6 +9,8 @@ In this video and scripts, we take directories of images with category labels (e
 3. Download/checkout [build_image_data.py](https://github.com/tensorflow/models/blob/master/research/inception/inception/data/build_image_data.py) and add to your project. 
 Make the alterations described below. 
 
+4. Run build_image_data.py. 
+
 
 **_build_image_data.py alterations:_**
 
