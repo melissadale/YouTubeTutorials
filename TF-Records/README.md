@@ -17,7 +17,7 @@ Make the alterations described below.
 1. Download/checkout: [build_image_data.py](https://github.com/tensorflow/models/blob/master/research/inception/inception/data/build_image_data.py)
 
 2. Change the following lines:
-    * Line 78 to: `tf.app.flags.DEFINE_string('train_directory', 'DATA/train/', ` ...
+    * Line 78 to: `tf.app.flags.DEFINE_string('train_directory', 'DATA/train/', ...`
     * Line 80 to: `tf.app.flags.DEFINE_string('validation_directory', 'DATA/validate/', ...`
     * Line 88 to: `tf.app.flags.DEFINE_string('output_directory', 'C:\\Users\\melissa\\Desktop\\youtubetutorials\\TensorflowRecords\\tmp\\',` ... **NOTE**: the output file needs an absolute path, please update to point to your TensorflowRecords directory
     * Line 106: `tf.app.flags.DEFINE_string('labels_file', 'DATA/labels.txt', 'Labels file')`
