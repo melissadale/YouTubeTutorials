@@ -3,7 +3,7 @@ import json
 import pandas as pd
 
 
-experiments = ['./atm.db']  ###  path to atm's generated db
+experiments = ['./atm.db']  ###  path to atm's generated db - can be a list of result dbs for different experiments
 df = pd.DataFrame(columns=['experiment', 'method', 'id', 'accuracy', 'SD', 'cohen_kappa', 'f1', 'mcc', 'roc_auc', 'ap'])
 
 
@@ -22,7 +22,7 @@ def find_best(my_db):
     for i in range(len(rows)):
         if None not in rows[i]:
             metrics = rows[i][1]
-            with open('./'+metrics) as f:  ###  path to atm's generated db
+            with open('./'+metrics) as f:  ###  path to atm's metrics
                 for line in f:
                     data=json.loads(line)
             subs = data['test']
