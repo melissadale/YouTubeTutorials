@@ -32,7 +32,7 @@ def find_best(my_db):
             best_model = pickle.load(open('../'+models, "rb"))
             best_params = best_model.params
 
-            df_sub.loc[i] = [my_db, rows[i][4], rows[i][0], subs['accuracy'], rows[i][3],
+            df_sub.loc[i] = [my_db, rows[i][5], rows[i][0], subs['accuracy'], rows[i][3],
                          subs['cohen_kappa'], subs['f1'], subs['mcc'], subs['roc_auc'], subs['ap'], best_params]
 
     return df_sub
