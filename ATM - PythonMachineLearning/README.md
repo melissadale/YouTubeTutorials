@@ -37,6 +37,8 @@ _For on Windows:_
 | ../atm.db  | dt     | 74 | 0.555555556 | 0.883333333 | 0.111111111 | 0.636363636 | 0.124034735 | 0.697530864 | 0.65982906  | {'min_samples_leaf': 3, 'max_features': 0.2627159007398094, 'min_samples_split': 3, 'criterion': 'entropy', 'max_depth': 4}                                |
 | ../atm.db  | knn    | 93 | 0.555555556 | 0.893650794 | 0.12195122  | 0.555555556 | 0.125       | 0.70625     | 0.727709096 | {'algorithm': 'kd_tree', 'leaf_size': 6, 'metric': 'euclidean', 'weights': 'uniform', 'n_neighbors': 17, '_scale': True}                                   |
 | ../atm.db  | logreg | 77 | 0.777777778 | 0.833232323 | 0.555555556 | 0.8         | 0.569802882 | 0.814814815 | 0.835305435 | {'class_weight': 'balanced', 'C': 0.00016384957710306223, 'tol': 7.413006554423885, 'fit_intercept': False, 'dual': True, 'penalty': 'l2', '_scale': True} | 
+
+
 **_Helper Things:_**
 
 - **RUN SCRIPT**: `source atm_setup.sh` 
