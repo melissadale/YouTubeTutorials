@@ -17,7 +17,7 @@ def partitionRankings(rawRatings, testPercent):
 
 
 #################################################################
-####    Make Directories
+####    Make Directories (if needed)
 #################################################################
 caboodle = defaultdict(list)
 categories = [x[1] for x in os.walk('./DATA')][0]
@@ -38,15 +38,24 @@ for category in categories:
         os.makedirs(train_dir)
 
 
+    #  Read images (currently either png or jpg format)
     for filename in glob.glob('DATA/'+str(category)+'/*.jpg'):
         im = Image.open(filename)
         keep = im.copy()
         subdata.append(keep)
         im.close()
 
+    for filename in glob.glob('DATA/'+str(category)+'/*.png'):
+        im = Image.open(filename)
+        keep = im.copy()
+        subdata.append(keep)
+        im.close()
+
+
     random.shuffle(subdata)
     train_sample, test_sample = partitionRankings(subdata, test_percentage)
 
+    #  Read images (save shuffled images to new train/validate folders in a jpg format)
     for i in range(len(train_sample)):
         train_sample[i].save(train_dir+'/'+str(category) + str(i) + '.jpg')
 
