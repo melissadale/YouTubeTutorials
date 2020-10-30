@@ -1,0 +1,13 @@
+.idea/
+ATM - PythonMachineLearning/atm.db
+ATM - PythonMachineLearning/atm/
+ATM - PythonMachineLearning/btb/
+ATM - PythonMachineLearning/metrics/
+ATM - PythonMachineLearning/models/
+*.classpath
+Eclipse-WindowBuilder-MyCalc/MyCalc/.project
+Eclipse-WindowBuilder-MyCalc/MyCalc/MyAddingCalc$1.class
+Eclipse-WindowBuilder-MyCalc/MyCalc/MyAddingCalc.class
+Eclipse-WindowBuilder-MyCalc/MyCalc/.settings/org.eclipse.jdt.core.prefs
+Eclipse-WindowBuilder-MyCalc/MyCalc/org/eclipse/wb/swt/SWTResourceManager.class
+Eclipse-WindowBuilder-MyCalc/MyCalc/org/eclipse/wb/swt/SWTResourceManager.java

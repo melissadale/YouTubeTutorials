@@ -1,0 +1,4 @@
+experiment,method,id,accuracy,SD,cohen_kappa,f1,mcc,roc_auc,ap,parameters
+../atm.db,dt,74,0.5555555555555556,0.8833333333333334,0.11111111111111116,0.6363636363636364,0.12403473458920847,0.6975308641975309,0.6598290598290598,"{'min_samples_leaf': 3, 'max_features': 0.2627159007398094, 'min_samples_split': 3, 'criterion': 'entropy', 'max_depth': 4}"
+../atm.db,knn,93,0.5555555555555556,0.8936507936507937,0.12195121951219512,0.5555555555555556,0.125,0.70625,0.7277090964590964,"{'algorithm': 'kd_tree', 'leaf_size': 6, 'metric': 'euclidean', 'weights': 'uniform', 'n_neighbors': 17, '_scale': True}"
+../atm.db,logreg,77,0.7777777777777778,0.8332323232323233,0.5555555555555556,0.7999999999999999,0.5698028822981898,0.8148148148148149,0.8353054353054354,"{'class_weight': 'balanced', 'C': 0.00016384957710306223, 'tol': 7.413006554423885, 'fit_intercept': False, 'dual': True, 'penalty': 'l2', '_scale': True}"
